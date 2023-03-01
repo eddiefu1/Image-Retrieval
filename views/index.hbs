@@ -1,0 +1,13 @@
+<div class="input-container">
+  <form action="/search" method="POST" enctype="multipart/form-data">
+    <input type="radio" name="method" id="intersection" value="intersection" checked>
+    <label for="intersection">Histogram Intersection</label><br>
+
+    <input type="radio" name="method" id="cosine" value="cosine">
+    <label for="cosine">Cosine Distance</label><br>
+
+    <label for="image_file"> Select Image: </label>
+    <input type="file" id="image_file" name="image_file" accept="image/x-png,image/gif,image/jpeg" required />
+    <button class="button" type="submit">Search</button>
+  </form>
+</div>

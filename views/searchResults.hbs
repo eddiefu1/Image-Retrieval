@@ -1,0 +1,49 @@
+<form action="/" method="GET">
+  <input type="submit" value="New Search" />
+</form>
+<div class="search-stats">
+  <h3 id="distance-header">
+    <span id="method">
+      {{method}}:
+    </span>
+    <span id="distance">
+    </span>
+  </h3>
+</div>
+<div class="container">
+  <div class="large-images-container">
+    <div class="large-image-container">
+      <div class="large-img-container">
+        <h3 id="input-img-title" class="img-title">Input Image</h3>
+        <img src={{input}} alt="No Image" id="input-img" class="large-img" />
+      </div>
+      <div class="large-img-container">
+        <h3 id="result-img-title" class="img-title">Selected Object</h3>
+        <img
+          {{!-- src={{selectedObj}} --}}
+          alt="No Image"
+          id="object-img"
+          class="large-img"
+        />
+      </div>
+      <div class="large-img-container">
+        <h3 id="hist-img-title" class="img-title">Result Object</h3>
+        <img
+          {{!-- src={{selectedObj}} --}}
+          alt="No Image"
+          id="result-img"
+          class="large-img"
+        />
+      </div>
+    </div>
+    <div class="large-image-container">
+      <div id="img-objects" class="img-objects">
+        {{!-- {{#each imgObjects}}
+          {{> object this}}
+        {{/each}} --}}
+      </div>
+    </div>
+  </div>
+  <div id="search-results" class="search-results">
+  </div>
+</div>
